@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .page-top {
+      background-color: #BF7C42;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      padding-top: 1%;
+      position: right;
+      right: 0;
+    }
+
+    .page-footer {
+      background-color: #BF7C42;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      clear: both;
+      height: 70px;
+      position: fixed;
+      bottom: 0;
+	  font-size: 16px;
+    }
+
+    .body-color {
+      background: #BF7C42;
+    }
+
+    * {
+      margin: 10;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      min-height: 80vh;
+      font-family: Montserrat, sans-serif;
+    }
+
+    nav a {
+      font-size: 40px;
+      color: #fff;
+      text-decoration: none;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      position: fixed;
+      left: 0;
+      z-index: 50;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      height: 80vh;
+    }
+
+    section {
+      position: absolute;
+      top: 0;
+      height: 80vh;
+      width: 0;
+      opacity: 0;
+      transition: all ease-in .5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section h1 {
+      color: #fff;
+      font-size: 50px;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+
+    /* Styles applied on trigger */
+    section:target {
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      top: 7%;
+      width: 100%;
+      height: 80%;
+      z-index: 10;
+    }
+
+    section:target h1 {
+      opacity: 0;
+      animation: 2s fadeIn forwards .5s;
+    }
+
+    #first {
+      background: #EFD1B3;
+    }
+
+    #second {
+      background: #EFD1B3;
+    }
+
+    #third {
+      background: #EFD1B3;
+    }
+
+    #fourth {
+      background: #EFD1B3;
+    }
+
+    @keyframes fadeIn {
+      100% {
+        opacity: 1
+      }
+    }
+
+    .profile-info {
+      width: 350px;
+      height: auto;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+	img {
+			border-radius: 50% 5%;
+	}
+	.no-roundness {
+	border-radius: 0 0;}
+    .contacts {
+      width: 150px;
+      height: 150px;
+      background: darkgrey;
+      margin: 3% 5% 2% 5%;
+      display: inline-grid;
+      color: #fff;
+      font-size: 80px;
+      text-transform: uppercase;
+
+    }
+
+    .profile-description {
+      width: 350px;
+      height: 350px;
+      background: #EFD1B3;
+	  font-family: Abyssinica SIL;
+    }
+
+    .content {
+      height: 250px;
+      width: 385px;
+      float: right;
+      margin: 20% 0 0 60%;
+	  text-align: center;
+    }
+	.fit-picture {
+	width: 400px 
+	}
+	.slide-bar {
+	display: block;
+	}
+	.student-month {
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+}
+	.student {
+	margin-left: 20px;
+}
+     .a {
+      margin-left: 20px;
+}
+  
+  </style>
+</head>
+<header>
+  <div class="page-top">Amirkhon Fakhriev</div>
+</header>
+<body class="body-color">
+
+<div>
+  <nav class="slide-bar">
+    <a href="#first">Home</a>
+    <a href="#second">Experience</a>
+    <a href="#third">Achievements</a>
+    <a href="#fourth">Contacts</a>
+  </nav>
+  <div class="content">
+  <div>
+  <h1> Welcome to my page :) </h1> 
+  </div>
+  </div>
+</div>
+<div class='container'>
+  <section id='first'>
+    <div class="profile-info">
+      <img src="123458e-pfr.jpg" alt="photo" width="290" height="387 align="center-right">
+    </div>
+    <div class="profile-description">
+      <p>
+        Hi, <br><br>Welcome to my website.<br><br> My name is Amir. I am a junior majoring in Contemporary Communications at LCC International University. I am from a mountainous country called Tajikistan. My hobbies are photography, videography, and coding. My dream job would be a movie producer as I am very passionate about videography since my childhood. In my free time, I used to go to fields and shoot nature on my camera and create a video adding background music. My goal is to improve more in this field and as well as in coding so I will make my web-site look so much better. 
+      </p>
+    </div>
+
+  </section>
+  <section id='second'>
+    <div class="profile-info">
+      <h1><font color="red">Education</h1>
+	  <h2><font color="black"><li>Garduated from Lyceum #2 in 2018</li></h2>
+	  <h2><li>Successful Completion of Future Leader (FLEX) Exchange 2019-2020</li></h2>
+	  <h2><li>LCC International University 2020-2024</li></h2>
+	  </ul>
+	  </h1>
+    </div>
+    <div class="profile-info">
+      <h1><font color="blue">Projects</h1>
+	  <h2><font color="black"><h2><li>Hackathon 2019</li></h2>
+	  <h2><li>Soles for Soul 2020</li></h2>
+	  <h2><li>Video Editer 2021</li></h2>
+    </div>
+  </section>
+
+  <section id='third'>
+    <div class="two-column">
+	<h1><font color="brown"><small><small><small><small><small>FLEX Program 2019-2020</h1>
+	<div>
+    <img class="no-roundness" src="IMG_5431.jpg"alt="a" width="300" height="195 align="left">	
+	<img class="no-roundness" src="IMG_5429.jpg" alt="b" width="300" height="169 align="left">
+	</div>
+	<img class="no-roundness" src="IMG_5430.jpg" alt="a" width="300" height="140 align="center">
+	<img class="no-roundness" src="227185689_1462776557410657_1052020247521098327_n.png" alt="b" width="300" height="169 align="right">
+	</div>
+	 <div class="student">
+	 <div>
+	 <div class="student-month">
+	<h1><font color="green"><small><small><small><small><small>Student of the Month</h1>
+	<img class="no-roundness" src="79633627_1328573380678511_7946219440729751552_n.jpg" alt="student month" width="380" height="380 align="right">
+    </div>
+	</div>
+  </section>
+
+  <section id='fourth'>
+    <div>
+      <div class="Contacts">
+	   <img class="no-roundness" src="contact-us-ga7b0ee5f3_1920.png" alt="contacts" width="300" height="86 align="right">
+	   </div>
+	   <div>
+	  <h3><br><br><font size="+1">Amirkhonfakhriev1@gmail.com</h3></font>
+	  </div>
+	  <div>
+	  <h3><font size="+1">Insta: Fv_amir </h3></font>
+    </div>
+	<div>
+	  <h3><font size="+1">LinkedIn: Amirkhon Fakhriev</h3></font>
+	  </div>
+    </div>
+	</div>
+  </section>
+</div>
+</body>
+<footer>
+  <div class="page-footer"><font color="black">Amir Ⓒ, October 13, 2022</div>
+</footer>
+</html>
+
